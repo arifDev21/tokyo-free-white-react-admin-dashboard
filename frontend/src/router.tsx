@@ -8,6 +8,7 @@ import BaseLayout from 'src/layouts/BaseLayout';
 import SuspenseLoader from 'src/components/SuspenseLoader';
 import ProtectedRoute from 'src/components/ProtectedRoute';
 import Login from './content/auth/Login';
+import Register from './content/auth/Register';
 
 const Loader = (Component) => (props) =>
 (
@@ -101,6 +102,10 @@ const routes: RouteObject[] = [
       {
         path: 'login',
         element: <Login />
+      },
+      {
+        path: 'register',
+        element: <Register />
       }
     ]
   },

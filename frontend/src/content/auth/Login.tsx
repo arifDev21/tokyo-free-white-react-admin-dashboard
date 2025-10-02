@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import {
     Box,
     Card,
@@ -308,6 +308,29 @@ const Login: React.FC = () => {
                                                 >
                                                     {isLoading ? 'Signing In...' : 'Sign In'}
                                                 </Button>
+
+                                                <Box
+                                                    sx={{
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        mt: 3,
+                                                    }}
+                                                >
+                                                    <Typography variant="body2" color="text.secondary">
+                                                        Don't have an account?{' '}
+                                                        <Link
+                                                            to="/register"
+                                                            style={{
+                                                                color: 'inherit',
+                                                                textDecoration: 'none',
+                                                                fontWeight: 600,
+                                                            }}
+                                                        >
+                                                            Sign up
+                                                        </Link>
+                                                    </Typography>
+                                                </Box>
                                             </Box>
                                         </CardContent>
                                     </Card>

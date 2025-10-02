@@ -155,7 +155,7 @@ const InvoiceFormContent: React.FC = () => {
 
     // Calculate totals
     const calculateSubtotal = () => {
-        return formData.items.reduce((total, item) => total + item.total, 0);
+        return formData.items.reduce((total, item) => total + item.total - item.taxAmount, 0);
     };
 
     const calculateTaxAmount = () => {
