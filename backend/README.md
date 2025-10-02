@@ -2,21 +2,34 @@
 
 A Node.js/Express backend for the Tokyo Admin Dashboard with MongoDB, JWT authentication, and invoice management.
 
+> **⚠️ Important**: Make sure you are in the `backend` folder before running any commands.
+
 ## 🚀 Quick Start
 
 ```bash
-# 1. Install dependencies
+# 1. Navigate to backend folder
+cd backend
+
+# 2. Install dependencies
 npm install
 
-# 2. Setup environment
+# 3. Setup environment
 cp .env.example .env
 
-# 3. Setup database (migration + seeder)
+# 4. Setup database (migration + seeder)
 npm run db:setup
 
-# 4. Start development server
+# 5. Start development server
 npm run dev
 ```
+
+### Alternative: Step by Step
+
+1. **Navigate to backend folder**: `cd backend`
+2. **Install dependencies**: `npm install`
+3. **Setup environment**: `cp .env.example .env`
+4. **Setup database**: `npm run db:setup`
+5. **Start development server**: `npm run dev`
 
 ## 📋 Available Commands
 
